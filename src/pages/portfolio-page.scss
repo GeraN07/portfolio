@@ -1,0 +1,306 @@
+.portfolio-page {
+    max-width: 1920px;
+    width: 100%;
+}
+
+.portfolio-page__main-block {
+    display: flex;
+    margin-top: 9px;
+}
+
+.slides {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1760px;
+    max-height: 794px;
+    position: relative;
+    width: 100%;
+}
+
+.slick-prev {
+    position: absolute;
+    left: -55px;
+    top: 251px;
+    border: none;
+    background-color: inherit;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.slick-next {
+    position: absolute;
+    right: -55px;
+    top: 251px;
+    border: none;
+    background-color: inherit;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.slide {
+    margin-right: 40px;
+}
+
+.slick-prev::before {
+    content: url("../src/assets/arrow-pre.svg");
+}
+
+.slick-next::before {
+    content: url("../src/assets/arrow-after.svg");
+}
+
+footer.page-footer {
+    margin-top: 40px;
+}
+
+.page-footer__wrapper {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 762px;
+}
+
+.page-footer__oreder-spec-button {
+    width: 264px;
+    font-family: FuturaPT-Book, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #a89365;
+    padding-top: 18.5px;
+    padding-bottom: 18.5px;
+    padding-left: 48px;
+    padding-right: 48px;
+    border: 1px solid #a89365;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.page-footer__oreder-project-button {
+    width: 235px;
+    font-family: FuturaPT-Book, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 18.5px;
+    padding-bottom: 18.5px;
+    padding-left: 62.5px;
+    padding-right: 62.5px;
+    background-color: #a89365;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.slick-slide:focus {
+    outline: none;
+}
+
+@media (max-width: 1919px) {
+    .portfolio-page {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slides {
+        max-width: 1200px;
+    }
+
+    .page-footer__wrapper {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 645px;
+    }
+
+    .page-footer__oreder-spec-button {
+        width: 264px;
+        font-family: FuturaPT-Book, sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #a89365;
+        padding-top: 11px;
+        padding-bottom: 10px;
+        padding-left: 18px;
+        padding-right: 18px;
+        border: 1px solid #a89365;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .page-footer__oreder-project-button {
+        width: 235px;
+        font-family: FuturaPT-Book, sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #fff;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 32.5px;
+        padding-right: 32.5px;
+        background-color: #a89365;
+        margin-left: 20px;
+    }
+
+    .slick-prev {
+        position: absolute;
+        left: -30px;
+        top: 190px;
+        border: none;
+        background-color: inherit;
+        font-size: 0;
+        cursor: pointer;
+    }
+
+    .slick-next {
+        position: absolute;
+        right: -30px;
+        top: 190px;
+        border: none;
+        background-color: inherit;
+        font-size: 0;
+        cursor: pointer;
+    }
+
+    .slick-prev::before {
+        content: url("../src/assets/arrow-pre-small.svg");
+    }
+
+    .slick-next::before {
+        content: url("../src/assets/arrow-after-small.svg");
+    }
+}
+
+@media (max-width: 1199px) {
+    footer.page-footer {
+        margin-top: 3px;
+    }
+
+    .portfolio-page {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slides {
+        max-width: 560px;
+    }
+
+    .slick-arrow {
+        visibility: hidden;
+    }
+
+    .page-footer__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 560px;
+    }
+
+    .page-footer__oreder-spec-button {
+        width: 264px;
+        height: 23px;
+        font-family: FuturaPT-Book, sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #a89365;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 148px;
+        padding-right: 148px;
+        border: 1px solid #a89365;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    .page-footer__oreder-project-button {
+        width: 235px;
+        height: 23px;
+        font-family: FuturaPT-Book, sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #fff;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 162.5px;
+        padding-right: 162.5px;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slick-dots {
+        list-style: none;
+        display: flex;
+        width: 140px;
+        height: 12px;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        margin-top: 0;
+    }
+
+    .slick-dots li {
+        width: 12px;
+        content: url("../src/assets/Ellipse-empty.svg");
+    }
+
+    .slick-dots li.slick-active {
+        width: 12px;
+        content: url("../src/assets/Ellipse-checked.svg");
+    }
+}
+
+@media (max-width: 599px) {
+    .portfolio-page {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .page-footer__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+
+    .page-footer__oreder-spec-button {
+        width: 264px;
+        height: 23px;
+        font-family: FuturaPT-Book, sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #a89365;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 18px;
+        padding-right: 18px;
+        border: 1px solid #a89365;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    .page-footer__oreder-project-button {
+        width: 235px;
+        height: 23px;
+        font-family: FuturaPT-Book, sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #fff;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 32.5px;
+        padding-right: 32.5px;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slick-dots {
+        margin-top: 20px;
+        width: 300px;
+    }
+}
