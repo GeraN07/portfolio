@@ -170,6 +170,12 @@ footer.page-footer {
     }
 }
 
+@media (min-width: 1199px) {
+    .slick-dots {
+        display: none;
+    }
+}
+
 @media (max-width: 1199px) {
     footer.page-footer {
         margin-top: 3px;
