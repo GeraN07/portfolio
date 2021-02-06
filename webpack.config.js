@@ -85,6 +85,14 @@ module.exports = {
       appendScriptTag: true
     }),
     new CleanWebpackPlugin(),
+    new CopyWebpackPlugin({
+      patterns:[
+     {
+       from: path.resolve(__dirname,'src/assets/images/'),
+       to: path.resolve(__dirname,'dist/images/')
+     } ,
+    ],
+  }),
   new MiniCssExtractPlugin({
     filename:filename('css')
   }),
@@ -126,7 +134,9 @@ module.exports = {
       {
         test:/\.(ttf|woff|woff2|eot)$/,
         use:['file-loader']
-      } 
+      },
+      
+      
     ]
 
   }
